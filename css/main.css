@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/*!
+ * 
+ * 盛邦升华
+ * 
+*/
+/* 
+ * css reset | v2.0
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  width: 1200px;
+  margin: auto; }
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.col-3 {
+  float: left;
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-6 {
+  float: left;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+header {
+  margin-bottom: 30px; }
+  header nav {
+    background-color: #3097d1; }
+    header nav img {
+      width: 85px;
+      height: 23px;
+      float: left;
+      margin-top: 17px;
+      margin-right: 15px; }
+    header nav ul {
+      float: left; }
+    header nav ul::after {
+      display: table;
+      clear: both;
+      content: ""; }
+    header nav li {
+      float: left; }
+    header nav a {
+      color: #d1e8f4;
+      padding: 20px 15px;
+      display: block;
+      text-decoration: none; }
+    header nav a:hover {
+      background-color: #2578a7; }
+  header nav::after {
+    display: table;
+    clear: both;
+    content: ""; }
+
+.content,
+.user,
+.about,
+.photos,
+.sponsored,
+.likes {
+  border: 1px solid #d3e0e9;
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 30px; }
+
+.content {
+  padding: 0; }
+  .content section {
+    border-bottom: 1px solid #d3e0e9;
+    padding: 15px; }
+    .content section:last-child {
+      border-bottom: none; }
+  .content time {
+    float: right;
+    color: #a6aeb2;
+    font-size: 12px; }
+  .content h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333948;
+    margin-bottom: 15px; }
+  .content p {
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #333948;
+    margin-bottom: 15px; }
+  .content strong {
+    font-weight: bold; }
+  .content .pic {
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: 15px; }
+    .content .pic::after {
+      display: table;
+      clear: both;
+      content: ""; }
+    .content .pic img {
+      width: 50%;
+      float: left;
+      height: 213px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-bottom: 10px; }
+  .content .picOne img {
+    width: 100%;
+    height: auto; }
+
+.user {
+  padding: 0; }
+  .user .user-header {
+    height: 150px;
+    background-image: url("../img/iceland.jpg");
+    background-size: cover; }
+  .user .user-content {
+    text-align: center;
+    margin-top: -50px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .user .user-content img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 7px; }
+    .user .user-content h2 {
+      font-size: 16px;
+      margin-bottom: 15px;
+      font-weight: bold; }
+    .user .user-content p {
+      font-size: 14px;
+      line-height: 1.5em;
+      margin-bottom: 30px; }
+
+.about h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+.about li {
+  color: #334b5e;
+  margin-bottom: 15px; }
+
+.about a {
+  text-decoration: none;
+  color: #3097d1; }
+  .about a:hover {
+    text-decoration: underline; }
+
+.photos h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+.photos div {
+  margin-left: -5px;
+  margin-right: -5px; }
+
+.photos div::after {
+  display: table;
+  clear: both;
+  content: ""; }
+
+.photos img {
+  width: 50%;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px; }
+
+.sponsored h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+.sponsored img {
+  width: 100%;
+  margin-bottom: 10px; }
+
+.sponsored h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+.sponsored p {
+  line-height: 1.5em;
+  margin-bottom: 10px; }
+
+.sponsored a {
+  text-decoration: none;
+  border: 1px solid #2a88bd;
+  padding: 8px 10px;
+  display: inline-block;
+  font-size: 14px;
+  color: #2a88bd;
+  border-radius: 2px; }
+  .sponsored a:hover {
+    background-color: #2a88bd;
+    color: #ffffff; }
+
+.likes {
+  background-color: #fff;
+  padding: 0; }
+  .likes .likes-header {
+    padding: 15px;
+    border-bottom: 1px solid #d3e0e9; }
+  .likes h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .likes li {
+    position: relative;
+    margin-bottom: 20px; }
+    .likes li img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      position: absolute; }
+    .likes li div {
+      margin-left: 75px;
+      padding-top: 2px; }
+      .likes li div p {
+        margin-bottom: 5px; }
+      .likes li div a {
+        border: 1px solid #2a88bd;
+        color: #2a88bd;
+        text-decoration: none;
+        padding: 8px 10px;
+        border-radius: 2px;
+        display: inline-block; }
+        .likes li div a:hover {
+          background-color: #2a88bd;
+          color: #ffffff; }
+    .likes li strong {
+      font-weight: bold; }
+  .likes .likes-text {
+    padding: 15px;
+    background-color: #f5f8fa; }
+    .likes .likes-text p {
+      line-height: 1.5em; }
+
+footer {
+  text-align: center;
+  border: 1px solid #d3e0e9;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  footer p {
+    margin-bottom: 20px; }
+  footer li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px; }
+  footer a {
+    text-decoration: none;
+    color: #3097d1; }
+    footer a:hover {
+      text-decoration: underline; }

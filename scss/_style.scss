@@ -1,0 +1,334 @@
+//重置
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//布局
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-3 {
+  float: left;
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-6 {
+  float: left;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+//网站的头部
+header {
+  margin-bottom: 30px;
+  nav {
+    background-color: #3097d1;
+    img {
+      width: 85px;
+      height: 23px;
+      float: left;
+      margin-top: 17px;
+      margin-right: 15px;
+    }
+    ul {
+      float: left;
+    }
+    ul::after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+    li {
+      float: left;
+    }
+    a {
+      color: #d1e8f4;
+      padding: 20px 15px;
+      display: block;
+      text-decoration: none;
+    }
+    a:hover {
+      background-color: #2578a7;
+    }
+  }
+  nav::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+.content,
+.user,
+.about,
+.photos,
+.sponsored,
+.likes {
+  border: 1px solid #d3e0e9;
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+//网站的主体部分
+.content {
+  padding: 0;
+  section {
+    border-bottom: 1px solid #d3e0e9;
+    padding: 15px;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  time {
+    float: right;
+    color: #a6aeb2;
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333948;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #333948;
+    margin-bottom: 15px;
+  }
+  strong {
+    font-weight: bold;
+  }
+  .pic {
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: 15px;
+    &::after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+    img {
+      width: 50%;
+      float: left;
+      height: 213px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-bottom: 10px;
+    }
+  }
+  .picOne {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+//用户区域的自定义样式
+.user {
+  padding: 0;
+  .user-header {
+    height: 150px;
+    background-image: url("../img/iceland.jpg");
+    background-size: cover;
+  }
+  .user-content {
+    text-align: center;
+    margin-top: -50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 7px;
+    }
+    h2 {
+      font-size: 16px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.5em;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.about {
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  li {
+    color: #334b5e;
+    margin-bottom: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: #3097d1;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+//photos 部分的样式
+.photos {
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  div {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  div::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  img {
+    width: 50%;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+.sponsored {
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  p {
+    line-height: 1.5em;
+    margin-bottom: 10px;
+  }
+  a {
+    text-decoration: none;
+    border: 1px solid #2a88bd;
+    padding: 8px 10px;
+    display: inline-block;
+    font-size: 14px;
+    color: #2a88bd;
+    border-radius: 2px;
+    &:hover {
+      background-color: #2a88bd;
+      color: #ffffff;
+    }
+  }
+}
+
+.likes {
+  background-color: #fff;
+  padding:0;
+  .likes-header{
+    padding: 15px;
+    border-bottom:1px solid #d3e0e9;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  li {
+    position: relative;
+    margin-bottom: 20px;
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      position: absolute;
+    }
+    div {
+      margin-left: 75px;
+      padding-top: 2px;
+      p {
+        margin-bottom: 5px;
+      }
+      a {
+        border: 1px solid #2a88bd;
+        color: #2a88bd;
+        text-decoration: none;
+        padding: 8px 10px;
+        border-radius: 2px;
+        display: inline-block;
+        &:hover {
+          background-color: #2a88bd;
+          color: #ffffff;
+        }
+      }
+    }
+    strong {
+      font-weight: bold;
+    }
+  }
+  .likes-text{
+    padding:15px;
+    background-color: #f5f8fa;
+    p{
+      line-height: 1.5em;
+    }
+  }
+}
+
+
+footer{
+  text-align: center;
+  border:1px solid #d3e0e9;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  p{
+    margin-bottom: 20px;
+  }
+  ul{}
+  li{
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  a{
+    text-decoration: none;
+    color: #3097d1;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
